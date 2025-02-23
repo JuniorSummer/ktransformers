@@ -222,11 +222,17 @@ def prefill_and_generate(model, tokenizer, inputs, max_new_tokens=10000, use_cud
 
     print("")
 
+    # 输入提示Token数
     print(f"prompt eval count:    {prefill_count} token(s)")
+    # 首token响应时间
     print(f"prompt eval duration: {prefill_time}s")
+    # 模型响应速度
     print(f"prompt eval rate:     {prefill_count/prefill_time} tokens/s")
+    # 输出内容token数
     print(f"eval count:           {tokens_generated} token(s)")
+    # 总生成耗时
     print(f"eval duration:        {total_time}s")
+    # 输出速度
     print(f"eval rate:            {tokens_per_second} tokens/s")
 
     return tokens
