@@ -181,4 +181,6 @@ def local_chat(
 
 
 if __name__ == "__main__":
+    # python -m ktransformers.local_chat --model_path deepseek-ai/DeepSeek-V2-Lite-Chat --gguf_path /root/autodl-tmp/models/DeepSeek-V2-Lite-Chat-GGUF
+    # 将命令行参数直接传给函数
     fire.Fire(local_chat)
